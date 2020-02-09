@@ -4,7 +4,7 @@ print("We help you save information about your friends")
 print("Enter the task you want to enter\n 1 for stident information\n2 for student marks")
 ch=int(input("Enter your choice"))
 if(ch==1):
-    con=pg2.connect(dbname='college',user='postgres',password='shekhar17',host='localhost')
+    con=pg2.connect(dbname='college',user='postgres',password='<your password>',host='localhost')
     cur=con.cursor()
     n=int(input("enter the number of students"))
     cur.execute("create table IF NOT EXISTS student(name TEXT,roll REAL,gender TEXT,sapid REAL)")
